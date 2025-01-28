@@ -32,6 +32,7 @@ router.get("/calculate/:a/:b/:operation", (req,res)=>{
             result = a*b
             break;  
         case "/":
+            // validation so that number is not divided by 0 
             switch (b) {
                 case 0:
                     res.send("Cannot Divide by 0");
