@@ -1,0 +1,222 @@
+#root {
+  width: 100%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  margin:0;
+  padding:0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAF7F0;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.routes{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin:0 0 5px 0px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#FAF7F0; 
+  height: 50px;
+}
+a:hover{
+  color: #4A4947;
+  text-shadow: 0px 0px 5px #4A4947;
+}
+a{
+  color: #5C7285;
+  background-color:#E2E0C8;
+  font-weight: 300;
+  text-decoration: underline;  
+  margin-right: 30px ;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 10px;
+}
+#root > div{
+  padding-left: 20px;
+}
+#overView{
+  color: #818C78;
+
+}
+h1{
+  color: #5C7285;
+}
+h2,h3{
+  color: #818C78;
+}
+
+#skillsContain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.skills, .container, .extraCcontainer, .aNrc{
+  padding-left: 0;
+  padding: 10px;
+  margin:6px;
+  border-radius: 5px;
+  background-color:#5C7285 ;
+  color: #FAF7F0; 
+  
+}
+
+.role{
+  font-size: large;
+  font-weight: 600;
+  color: #A7B49E;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.res{
+  padding-left: 0;
+  padding: 10px;
+  margin:6px;
+  border-radius: 5px;
+  font-size:medium;
+  color: #E2E0C8;
+  background-color: #A7B49E;
+  width: 300px;
+}
+.resContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+#clubName{
+  color: #E2E0C8;
+}
+.extraCcontainer{
+  width:300px;
+}
+#extracOuter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #A7B49E;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+#volunContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  background-color: #A7B49E;
+  padding: 30px 0;
+
+}
+#institution{
+  color: #E2E0C8;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+#degree{
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+.aNrcOuter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.aNrc{
+  background-color: #E2E0C8;
+  color: #818C78;
+}
+.eduSubhead{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  margin: 4px
+}
+.images{
+  height: 400px;
+  margin: 10px;
+  border-radius: 5px;
+  border-color: #5C7285;
+  
+}
+.imageContainer{
+  background-color: #818C78;
+  padding: 20px 12px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#pTitle{
+  padding: 0;
+  margin: 0;
+  color: #A7B49E;
+}
+#pLang{
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 6px;
+  color: #E2E0C8;
+  margin-bottom: 10px;
+}
+#pDesc{
+  background-color: #818C78;
+  color: #E2E0C8;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 20px;
+}
+#pOuter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
