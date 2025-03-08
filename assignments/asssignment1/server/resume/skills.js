@@ -1,4 +1,6 @@
 const skills = {
+    // an array of objects for skills section of resume 
+    //this information will be sent to the front end to be rendered
     technical: [
         "HTML & CSS",
         "JavaScript",

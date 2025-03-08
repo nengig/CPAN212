@@ -1,6 +1,9 @@
 import path from "path";
 import fs from "fs";
 
+//this function retreives all the files in the design folder and saves in the req parameter the link to 
+//the images in the design folder
+//this will be sent to the front end to be displayed using .map
 const getDesigns = (req, res, next) => {
   const designsFolder = path.join(process.cwd(), "portfolioInfo/designs");
 

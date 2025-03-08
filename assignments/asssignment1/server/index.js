@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+//more routes 
 app.use('/resume',resume_route);
 app.use('/portfolio', portfolio_route)
  

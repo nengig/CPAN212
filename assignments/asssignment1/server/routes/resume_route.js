@@ -8,6 +8,7 @@ import overview from "../resume/overview.js";
 const router = express.Router();
 
 //route that front end will use to fetch information
+//sends various resume information
 router.get('/education',(req,res)=>{
     res.json(education)
 });

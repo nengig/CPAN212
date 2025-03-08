@@ -1,4 +1,7 @@
 const volunteerExperience = [
+    // an array of objects for volunteer section of resume 
+    // this is volunteering that was community involvement
+    //this information will be sent to the front end to be rendered
     {
         role:'Volunteer Cordinator',
         organization:'Harold M. Brathwaite SS',

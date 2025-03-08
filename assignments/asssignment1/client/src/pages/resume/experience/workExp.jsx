@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function WorkExperience (){
     const [workExp, setWorkExp] = useState([]);
     const getWorkExperience = async() => {
-
+        //call server to provide work experience information and save it to  variable
         try{
             const response = await fetch(`http://localhost:8000/resume/workExperience`);
             const data = await response.json();
@@ -14,7 +14,7 @@ function WorkExperience (){
         } 
     }
     useEffect(() => {
-        getWorkExperience(); // Call the function inside useEffect
+        getWorkExperience(); // Call the function on 1st render 
     }, []);
     
     // if workExp is empty show loading     
@@ -24,6 +24,7 @@ function WorkExperience (){
         <div>
             <h2 className="headers">Work Experience</h2>
             {workExp.map((exp,index)=>(
+                //display 
                 <div key={index} className="container">
                     <p className="role">{exp.role}</p>
                     <div className="resContainer">

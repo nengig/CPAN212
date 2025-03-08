@@ -1,4 +1,6 @@
 const workExperience = [
+  // an array of objects for work experience section of resume 
+    //this information will be sent to the front end to be rendered
     {
       role: "Babysitter",
       company: "Freelance",

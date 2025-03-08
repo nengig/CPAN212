@@ -3,17 +3,17 @@ import '../../App.css'
 function Education (){
     const [education, setEducation] = useState([]);
     const getEducation = async() => {
+        //call server to provide education information and save it to education variable
         try{
-            const response = await fetch(`http://localhost:8000/resume/education`);
-            const data = await response.json();
-            console.log(data)
-            setEducation(data);
+            const response = await fetch(`http://localhost:8000/resume/education`); //fetch call
+            const data = await response.json();//json
+            setEducation(data);//save
         }catch (error){
             console.log(error)
         } 
     }
     useEffect(() => {
-        getEducation(); // Call the function inside useEffect
+        getEducation(); // Call the function after first render 
     }, []);
     
     // if education is empty show loading     
@@ -28,6 +28,7 @@ function Education (){
                     <h4 id="degree" style={{color:'#A7B49E'}}>{edu.degree}</h4>
                     <div className="aNrcOuter">
                     {edu.achievements.map((achievement,i)=>(
+                        //map education information 
                         <p className="aNrc" key={i}>{achievement}</p>
                     ))} 
                     </div>

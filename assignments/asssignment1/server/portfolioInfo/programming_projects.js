@@ -1,4 +1,6 @@
 const programming=[
+    // an array of objects for various programming projects 
+    //this information will be sent to the front end to be rendered
     {
         title:"Personal Website",
         language:'HTML, CSS, JavaScript',

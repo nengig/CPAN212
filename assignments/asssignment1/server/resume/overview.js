@@ -1,4 +1,6 @@
 const overview = [
+    // an array of objects for overvie section of resume 
+    //this information will be sent to the front end to be rendered
     "My name is Jecoliah Gbobo and I am a Computer Programming student at Humber Polytechnic.",
     "As you will see I am a very well rounded indivdual.",
     "I have worked on a variety of projects that display my technical skills.",

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 function CommunityVolunteer (){
     const [volunteerExp, setVolunteerExp] = useState([]);
     const getVolunteerExperience = async() => {
+    //call server to provide community volunteer experience information and save it to  variable
         try{
             const response = await fetch(`http://localhost:8000/resume/volunteer`);
             const data = await response.json();
@@ -13,7 +14,7 @@ function CommunityVolunteer (){
         } 
     }
     useEffect(() => {
-        getVolunteerExperience(); // Call the function inside useEffect
+        getVolunteerExperience(); // Call the function at the 1st render 
     }, []);
     
     // if volunteerExp is empty show loading     
@@ -24,6 +25,7 @@ function CommunityVolunteer (){
             <h3 className="headers">Community Involvement</h3>
             <div id="volunContainer">
             {volunteerExp.map((vol,index)=>(
+                //display information
                 <div key={index} className="container" style={{width:'40%', textAlign:'center', padding:'20px 0'}}>
                     <p className="role">{vol.role}</p>
                     <div className="resContainer" style={{justifyContent:'center'}}>

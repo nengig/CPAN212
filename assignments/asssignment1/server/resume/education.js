@@ -1,4 +1,6 @@
  const education = [
+     // an array of objects for educationn section of resume 
+    //this information will be sent to the front end to be rendered
     {
       degree: "Ontario High School Diploma",
       institution: "Harold M. Brathwaite Secondary School",
